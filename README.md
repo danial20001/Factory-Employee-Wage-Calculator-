@@ -1,16 +1,16 @@
 # Factory-Employee-Wage-Calculator-
 
-Introduction
+**Introduction**
  The Cake Factory Employee Wage Calculator is a Java program designed to calculate the wages of employees in a cake factory. The program considers the number of cakes covered, the number of cakes added, and the number of wrong cakes. The program also distinguishes between regular employees and Quality Controllers (QCs) and calculates their wages accordingly.
 Objective
 The main objective of this project is to accurately calculate the wages of employees, considering their roles and performances. The program also aims to display the employees' information in a sorted manner based on the number of cakes covered and their names.
-Classes
+**Classes**
  The project is divided into four main classes: Employee, Quality Controller, Team, and Main.
 Employee: This class represents a regular employee with attributes like name, cakes covered, and wage. It contains methods to validate input, calculate wages, and override the toString method for custom output formatting.
 QualityController: This class inherits from the Employee class and represents a Quality Controller employee. It overrides the calculateWage method to apply a 12% raise to the base wage for QCs.
 Team: This class manages a list of employees and provides methods to add employees, calculate total wages, calculate total cakes, sort employees, and display employee information.
 Main: The main class contains the main method that creates a Team object, adds employees to the team, and calls the method to sort and display employees.
-Testing:
+**Testing:**
 A comprehensive testing strategy was employed for this project, with JUnit tests covering the main class constructs focusing on wage calculations, input validation, and sorting functionality. The testing is divided into 3 test files, each testing a different class with the main constructors on its own while using employees added for the specific scenario to test properly. The following table summarizes the test cases for the project:
 Test Case Description	Expected Result	Actual Result
 Wage calculation for cakes covered < 50	4.90	4.90
@@ -30,7 +30,7 @@ public void sortEmployees() {
 
 Please open the testing files inside the /src repository to view all the tested constructors.
 
-Reflection and Critique:
+**Reflection and Critique:**
 Although the code is highly optimized, it lacks additional features that the client might find useful.
 •	GUI: Instead of having to open every single java file, which may be difficult for a regular user, a user interface should have been introduced to make it easier for the user to add and view new employees. The app requires UI improvement and is not user appealing.
 •	To test some more uncommon occurrences, such as what happens if the wrong cakes are greater than the cakes covered, will the employee owe money to the company? More thorough testing may be necessary. There are an endless number of potential events when the test scenario is pushing the software to its limit.
